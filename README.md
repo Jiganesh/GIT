@@ -1,9 +1,15 @@
 **Adding a local repository to GitHub with GitHub CLI**
+
 `git init -b main`
+
 `git add . && git commit -m "initial commit"`
+
 `gh repo create`
+
 `git remote add origin https://github.com/jiganesh/<repository name>.git`
+
 `git config pull.rebase false`
+
 `git push -u origin main`
 
 select "Push an existing local repository to GitHub" and enter the desired name for your repository and select necessary options for further questions.
@@ -45,3 +51,7 @@ For more detailed message
 - git config pull.rebase false #merge (default strategy)
 - git config pull.rebase true #rebase
 - git config pull.ff only # fast-forward only
+
+
+**Show current branch**
+`git branch --show-current`
